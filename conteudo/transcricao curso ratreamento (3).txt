@@ -1,0 +1,600 @@
+00:00:00:00 - 00:00:31:18
+Desconhecido
+Então pessoal, para começar eu vou explicar um pouco para vocês o que é o rastreamento de dados, o que a gente vai aprender aqui? Tem uma grande diferença que provavelmente vocês já ouviram muito aí, né? O tratamento de dados, o tratamento e o rastreamento, eles são coisas um pouco diferente, né? Aqui eu explico um pouco que o rastreamento de dados ele é como se fosse a primeira etapa do tratamento.
+
+00:00:31:20 - 00:01:01:06
+Desconhecido
+O rastreamento de dados. A gente vai fazer o quê? A gente vai capturar dados de onde esse lig veio? Ou seja, quando a gente faz nossa lua de page, quando a pessoa preenche lá o formulário, a gente consegue obter, dependendo dos campos que tem no formulário, o nome, o e-mail e telefone. Essas são informações cruciais para todo o rastreamento e a gente obter on line mais com rastreamento de dados.
+
+00:01:01:06 - 00:01:39:13
+Desconhecido
+Além dessas informações, a gente vai conseguir obter informações tipo de que fonte e se ele veio. Se ele ver, está grande, Se ele veio do Google, se ele veio do Facebook, por qual anúncio criativo ele veio. Ou seja, eu sei de que campanha ele veio até mim. Eu sei qual foi o anúncio que ele clicou, Eu sei se ele clicou no feed e não está aí até para fazer uma própria análise da minha campanha, para saber o que está performando melhor, onde eu devo colocar mais verba, onde eu devo tirar verba, enfim, fazer uma otimização da campanha, né?
+
+00:01:39:16 - 00:02:08:13
+Desconhecido
+Então, basicamente essa é o rastreamento, né? Então pessoal, já o tratamento de dados é justamente a gente obter todas essas informações, mas além de a gente obter para si, a gente lança para o Facebook para otimizar as campanhas onde a gente não vai aprender e tratamento a gente. Esse custo é apenas de rastreamento. Provavelmente no futuro eu vou fazer um curso mais completo, onde a gente aprende a rastrear e entra aqui.
+
+00:02:08:15 - 00:02:15:02
+Desconhecido
+Mas esse curso em específico, a gente vai aprender o rastreamento de dados para obter as informações para si. Beleza.
+
+00:02:15:02 - 00:02:46:24
+Desconhecido
+Vamos agora entender um pouco do conceito de variáveis. Toda vez que eu deixo o curso vai ser a parte mais chatinha da pessoa entender, né? Mas vamos lá, eu vou explicar no futuro jajá pra que a gente vai aplicar esse conceito. Mas de antemão, vamos tentar entender o conceito de variáveis na programação. É como se fosse uma caixinha e dentro dessa caixinha a gente guarda informações.
+
+00:02:46:27 - 00:03:16:26
+Desconhecido
+É como se fosse um pen drive que dentro do pen drive você consegue alocar coisas dentro. A variável na programação é basicamente isso. É um espaço que eu vou dizer esse espaço eu vou dar um nome para esse espaço, como se fosse caixinha de surpresa. E dentro dessa caixinha de surpresa eu consigo colocar qualquer coisa, entendeu? Só que o nome que eu dou pra essa caixinha, nesse caso, foi a caixinha de surpresa.
+
+00:03:16:28 - 00:03:39:18
+Desconhecido
+Eu consigo dar qualquer nome. Eu posso dar um nome Identidade do aluno. E dentro dessa caixinha vou colocar um número que se eu quiser ou não, pode ser a identificação do aluno. Ou seja, o que eu quero dizer aqui é que no mundo das variáveis a gente consegue dar qualquer nome e colocar qualquer coisa dentro. É basicamente isso.
+
+00:03:39:20 - 00:04:06:25
+Desconhecido
+E depois a gente pode usar essa variável para fazer outra coisa. Ou seja, se eu quiser fazer uma conta matemática, por exemplo, no âmbito da programação, eu quero somar um número que vai me dar um x mais dez. Vai ser igual a tal coisa. Só que esse número X ele pode ser, ele pode mudar, ele pode ser um, depois pode ser outro, depois pode ser outro.
+
+00:04:06:28 - 00:04:39:19
+Desconhecido
+Vamos supor que vai depender de quantos itens uma pessoa tem num carrinho de compras e eu quero somar esses itens a dez e ter um resultado. Então, por exemplo, vai ter uma pessoa que ela vai ter cinco itens, então eu vou substituir esse X por cinco. Ou seja, eu guardei a variável x, ai a variável x tem armazenado o número cinco, então na conta eu boto x mais dez igual a 15 nesse caso.
+
+00:04:39:21 - 00:05:03:07
+Desconhecido
+Mas vamos supor que passe outro cliente pelo caixa e dê o que tem dez itens, então não vai ser mais cinco, mais dez, vai ser dez, mais dez igual a 20. O que eu quero que vocês entendam é que tipo a variável x a a equação vai estar a mesma x mais dez igual a resultado, e esse x pode variar dependendo do que eu for colocando dentro.
+
+00:05:03:10 - 00:05:24:27
+Desconhecido
+E esse X eu dou o nome de variável, que é justamente a caixinha que pode vir qualquer coisa dentre qualquer valor, dependendo do que eu quiser. É meio confuso e meio abstrato de entender assim, mas eu acho que esse já é um bom caminho para a gente. Enfim, começar a entender um pouco sobre o que é a variável e o que a gente vai usar agora.
+
+00:05:24:27 - 00:06:01:09
+Desconhecido
+Bem, entendendo esse conceito de variável. Agora a gente vai adentrar o que são parâmetros de URL e para vocês entenderem o que é parâmetros de URL, a gente vai ter que faltar em variáveis, porque os parâmetros de URL não são nada mais nada menos que variáveis usadas no nosso famoso link. O que é um link? Um link é justamente o endereço que tá no nosso navegador.
+
+00:06:01:12 - 00:06:30:11
+Desconhecido
+Por exemplo, eu botei aqui um exemplo https que tem que começar assim todo link e vejá oculto isso, mas sempre tem lá meu site ponto com.br. Esse é um link barra produto. Quando a gente usa essa barra, quer dizer que dentro do meu domínio que é esse aqui, eu posso ter várias páginas, né? Então, quando eu torno um e-commerce, eu estou na página principal.
+
+00:06:30:13 - 00:07:01:18
+Desconhecido
+Provavelmente vai ter aqui meu site onde como br Barra Home. Quando eu clico no produto o meu link já muda, vai estar meu site post completo br e barra produto Y quando eu entro no carrinho está neste ponto com.br barra carrinho. Então tudo que vem depois dessa barra quer dizer, em qual página do site eu estou? E vocês podem perceber que tem uma interrogação aqui no meu link.
+
+00:07:01:20 - 00:07:34:02
+Desconhecido
+O que vem depois dessa interrogação são justamente os parâmetros de URL e os parâmetros de URL são variáveis que eu vou colocar informações dentro de cada variáveis para identificar algo. Entendeu? Aqui, por exemplo, eu botei já avançando um pouco que isso vai ser no próximo slide, mas tem aqui depois a interrogação. Botei o termo em source, Eu vou explicar depois que significa isso.
+
+00:07:34:02 - 00:08:04:13
+Desconhecido
+Mais o tema. Isso hoje é minha variável ou igual, quer dizer que tudo que vier depois da igual é o valor que vai estar dentro da variável, ou seja, na caixinha o theme source vai ter um valor no Instagram, por exemplo, que nem a gente vai lá na explicação da variável, o x vai ter o número da quantidade de itens e o carrinho de compra, certo?
+
+00:08:04:15 - 00:08:33:26
+Desconhecido
+Nessa equação aqui na minha URL, o item seis vai receber o valor do Instagram. Esse avião comercial aqui quer dizer que eu estou separando essa variável e esse valor de outra variável e outro valor nessa e nessa variável? Aqui o tema também. Ela vai receber conteúdo igual, quer dizer que ela vai receber o valor verão 2025.
+
+00:08:33:28 - 00:09:15:03
+Desconhecido
+Ficou claro? Então, tipo, tudo o que vier depois da minha interrogação vai ser os parâmetros de URL e os parâmetros de URL. Eu posso dar qualquer nome para eles. Nesse aqui eu botei já a exultemos, que é um tipo de parâmetro de URL que eu vou explicar mais para frente, mas se eu quisesse, eu poderia colocar qualquer um, Eu poderia botar meu site ponto curto br em barra produto interrogação que tudo que vem depois da interrogação e os parâmetros ele pode botar o número do meu cliente vai receber o valor X?
+
+00:09:15:05 - 00:09:21:09
+Desconhecido
+Para que eu vou usar isso? Não sei, mas se você quiser você pode parametrizar tudo.
+
+00:09:21:09 - 00:09:46:02
+Desconhecido
+Então, para a gente dar segmento, eu peguei um exemplo aqui bem interessante que qualquer um pode fazer. Se vocês forem no Google agora e digitar qualquer coisa na barra de pesquisa e dão enter. E se vocês repararem a URL lá em cima, vocês vão ver que aparece uma monstruosidade tipo essa aqui, né? E o que é essa monstruosidade?
+
+00:09:46:05 - 00:10:15:04
+Desconhecido
+Como eu expliquei anteriormente, os sites das empresas usam os parâmetros de URL para rastrear atividades. E a gente, como é que eles fazem isso? Eles têm um mecanismo por trás, onde quando a gente pesquisa alguma coisa, eles usam geolocalização. Eles usam, enfim, é o tempo que a gente clicou e eles armazenam tudo isso em parâmetros de URL e capturam as informações.
+
+00:10:15:07 - 00:10:45:07
+Desconhecido
+Vamos lá. Eu fiz uma pesquisa no Google com o nome Teste de Velocidade, então a gente pode ver aqui https dois pontos Barra bar tem W da Google ponto com barra search, que provavelmente quer dizer que eu fiz uma pesquisa interrogação Vocês já entenderam que depois da interrogação, tudo que vem depois é parâmetros de URL. E aqui a gente não sabe o que é, mas a gente pode identificar alguns parâmetros.
+
+00:10:45:09 - 00:11:26:09
+Desconhecido
+Aqui tem um parâmetro que tudo o que vinha antes do igual quer dizer que é a variável barra, o parâmetro que é a mesma coisa. E o que vem depois da interrogação é o valor, o que está armazenado na caixinha, na variável. Então aqui que é igual a teste mais tem mais velocidade. O mesmo comercial que vai fazer o que vai separar uma variável da outra, Um parâmetro de URL da outra tem que rlz igual A1C1VD que é bem underline pt traço tá tá tá tá tá tá tá tá tá tá.
+
+00:11:26:12 - 00:12:01:15
+Desconhecido
+É comercial a variável u que igual a teste o agente comercial tem a variável gs underline SRP é igual a tara. Então o que eu to querendo dizer é que todos os sites ou a grande maioria deles usam parâmetros de URL para rastrear nossa as nossas atividades. Eu joguei num chat PT e pedi pra ele me dizer o que significava cada parâmetro de URL e deixa então anular o parâmetro que ele vai dizer.
+
+00:12:01:15 - 00:12:37:26
+Desconhecido
+O termo que foi pesquisado. No meu caso foi o teste que o teste sc scr underline s vê que é um número aleatório. Ele é um identificador interno do Google para testes e métricas internas. O RLZ vai ser um indentifica identificar o navegador, idioma e localização. Esse aqui vai ser um token de proteção. O outro vai ser um identificador único de interação do usuário com resultados.
+
+00:12:37:28 - 00:13:20:04
+Desconhecido
+Esse Ved vai ser um valor criptografado do Google para identificar a navegação específica do usuário. Enfim, esse o que vai ser o termo original pesquisado SGS esse SLP informações internas do Google sobre localização, idioma, comportamento, enfim. Com esses parâmetros, o Google consegue rastrear cada passo da gente e o que a gente vai fazer jajá vai ser usar alguns desses parâmetros para conseguir otimizar o nosso rastreio das nossas campanhas, dos nossos links, enfim, de qualquer forma que você queira usar isso, sabe?
+
+00:13:20:06 - 00:13:21:15
+Desconhecido
+Então vamos prosseguir aqui.
+
+00:13:21:15 - 00:13:30:28
+Desconhecido
+Então adentrando agora o que são themes, vou explicar de uma forma mais clara que eu posso.
+
+00:13:31:01 - 00:13:58:02
+Desconhecido
+Ajudem me! São nada mais nada menos que parâmetros de URL que a gente já viu aqui. Só que convencionado. Ou seja, eu posso. Como eu já falei, eu posso colocar qualquer nome nos meus parâmetros de URL. Só que eu vou conseguir identificar se eu boto ID do ID de usuário, certo? E vai aparecer lá um identificador de usuário.
+
+00:13:58:04 - 00:14:24:11
+Desconhecido
+Só que se eu quiser montar um deste borne, por exemplo, e essa outra plataforma, ela não vai saber que o parâmetro de URL ID do usuário e o ID do usuário não tem como ela saber adivinhar que eu vou botar esse nome no meu parâmetro de URL para identificar um usuário. Vocês concordam? Vocês entenderam? Por exemplo, se eu botar.
+
+00:14:24:13 - 00:14:31:20
+Desconhecido
+Número de cliques, por exemplo, como parâmetro de URL, será?
+
+00:14:31:22 - 00:14:53:26
+Desconhecido
+Sonoramente e o idioma? A gente consegue identificar. Só raciocinar um pouco, que é que o parâmetro número de cliques vai ser o número de cliques. Só que como a máquina vai identificar isso automaticamente é o número de cliques sem avisar para ela. Como é que eu vou dizer esse número de cliques e a gente tá falando eu não gosto.
+
+00:14:53:26 - 00:15:34:23
+Desconhecido
+Bem objetivo, mas que nem o Google usa o parâmetro key pra identificar o termo da pesquisa. Como é que as outras plataformas, Como é que o Facebook, como é que Instagram vai identificar isso? Então fica mais abstrato, já que é um negócio tão amplo. Quem consegue colocar qualquer número, então ou fizeram um acordo, uma convenção de que certos parâmetros tenham que ser universais para meio que todas as plataformas entenderem esses parâmetros, como cada coisa?
+
+00:15:34:25 - 00:16:03:19
+Desconhecido
+Deu pra entender? Meio que isso é um parâmetro de URL padronizados que todas as plataforma plataformas entendem que o que tiver dentro desse parâmetro vai ser exatamente essa coisa e o que a gente vai chamar de Udemy. Vou explicar um pouco da história, né? O Udemy significa lanche track track, modo que em português é basicamente Mauro. Módulo de rastreamento Deixe.
+
+00:16:03:22 - 00:16:41:25
+Desconhecido
+Este é o nome do criador de uma empresa. Ele criou essa empresa hoje em software e em 2005 o Google comprou essa empresa e que hoje evoluiu para o que a gente conhece, como o Google Analytics, que é a grande plataforma de análise de dados do Google, análise de métricas de sites e inúmeras outras coisas. Então, como homenagem ao criador, sim, eles quiseram deixar o nome e o tema ainda, porque o é hoje o Teddy Track e o M de Bola.
+
+00:16:41:25 - 00:17:08:02
+Desconhecido
+O módulo de tratamento hoje é o Google. Para fazer essa homenagem. Eles deixaram o mesmo nome, o TM. Eles não mudaram. Então, basicamente é isso que são úteis. Então a gente entendeu o que é o terreno. É basicamente um parâmetro de URL padronizado que todas as plataformas entendem. E quais são essas? O temos. Vamos agora saber quais são.
+
+00:17:08:04 - 00:17:52:10
+Desconhecido
+Então, temos basicamente cinco temas principais e quais são elas. A primeira, o TM Underline Source, que ela vai identificar a origem do meu tráfego. Então tipo, de onde essa pessoa veio? Ela veio pelo Google? Ela veio pelo Facebook, ela veio pelo Instagram, ela veio pelo tictac, ela veio pelo LinkedIn basicamente para identificar de qual plataforma de anúncio ou qualquer outro lugar onde foi a origem que meu link chegou até mim, certo?
+
+00:17:52:12 - 00:18:25:20
+Desconhecido
+Então o tema é mídia. Ele vai identificar basicamente por onde ele. O meu link chegou. Se ele chegou através de o Google Search, ele vai identificar a origem meio que a plataforma Instagram, o Medium. Ele vai identificar de onde do Instagram ele veio, se ele veio através de um restaurante, se ele vê, se ele vê através de um feed, por exemplo, se a gente for usar o Google, se ele veio através de um vídeo, se vai ver se ele vai através de um termo de pesquisa.
+
+00:18:25:22 - 00:19:03:08
+Desconhecido
+Então esse basicamente é o termo mídia. O termo é campeão, Ele já vai ser usado mais para tráfego pago, né? Então a gente vai identificar de qual campanha ele veio. Eu estou lá com várias campanhas, ele vai identificar de qual campanha ele veio, o tema e também ele é primariamente usado quando a gente vai trabalhar com o Google Ads, que ele vai identificar qual foi o tempo de pesquisa que meu usuário usou para chegar até mim.
+
+00:19:03:10 - 00:19:28:09
+Desconhecido
+Eu estou fazendo uma campanha lá no Google e é de rede de pesquisa e bota lá que eu quero que meu anúncio apareça. Para as pessoas que pesquisaram a palavra curso, vamos botar, por exemplo. Então, se a pessoa pesquisa o curso aparecer mesmo, se ela clicou o meu tem o meu, o tema, então ele ele vai aparecer lá.
+
+00:19:28:09 - 00:20:03:07
+Desconhecido
+O curso é justamente a palavra que a pessoa pesquisou para chegar até meu anúncio. Só que, como a maioria, a maioria esmagadora das pessoas hoje apenas usam Facebook e eles a gente usa o termo também inventei termo de pesquisa. A gente usa como conjunto de anúncio, Então o termo entrar no Facebook, a gente vai identificar de qual conjunto de anúncio o meu nicho chegou porque tem uma campanha, conjunto de anúncio, mídia, foto, vídeo.
+
+00:20:03:09 - 00:20:38:10
+Desconhecido
+Mas antes tem um conjunto de anúncio, tem internet. Vai ser justamente pra gente identificar isso. E chegamos a o tema content, que vai ser basicamente por qual conteúdo, qual mídia? O nosso link chegou, ou seja, uma campanha lá do Facebook a gente bota cinco fotos e cinco vídeos e cada foto, cada vídeo tem um nome vinho, né? Então a gente pelo Theme Content vai saber qual foi a mídia que meu cliente clicou para chegar até meu site, entendeu?
+
+00:20:38:17 - 00:20:41:25
+Desconhecido
+Então, para isso que a gente usa o Theme Content.
+
+00:20:41:25 - 00:21:06:25
+Desconhecido
+Pronto. Aí vocês vão me perguntar certo? Aí entendi o que são variáveis. Entendi o que é parâmetro de URL. Ele entendeu o que são themes e como a gente faz isso na prática. Porque até agora eu aprendi só teoria e quero colocar meus links para rastrear o meu pessoal, os meus links. Então vamos lá pra gente usar mais o themes.
+
+00:21:07:02 - 00:21:52:04
+Desconhecido
+Nós temos três formas de usar ou a gente vai fazer isso manualmente, colocando todos os símbolos que precisam pegar o link do nosso site, colocar a interrogação, colocar o parâmetro ou o theme que nada mais é que um parâmetro padronizado. Como vocês já entenderam o símbolo de igual o valor que eu quero dentro o e-comerce há o outro e assim segue a sequência ou a gente vai usar um construtor de UTM ou de parâmetro de URL que já vai fazer isso a semi automaticamente para a gente.
+
+00:21:52:07 - 00:22:29:04
+Desconhecido
+Eu vou mostrar para vocês. São sites que a gente entra lá e a gente consegue preencher cada parâmetro certinho e parametrizar o link por ali. E da terceira forma é fazer isso automaticamente. Quando a gente usa a plataforma de anúncio, como o Facebook, a gente não vai conseguir. Até vai. Mas se a gente fizer um link parametrizado para cada anúncio, assim que a gente for fazer isso, vai demorar muito tempo.
+
+00:22:29:07 - 00:23:11:04
+Desconhecido
+Então a gente usa basicamente variáveis dentro de variáveis que vão fazer com que esse processo seja automático. Quando for mais para frente, eu vou explicar direitinho cada um desses para vocês entenderem melhor. Então vamos lá. Aqui está a estrutura que eu já expliquei como a gente faz isso manualmente. Vai estar aqui nosso link. Depois no nosso link vai ter uma interrogação justamente para indicar que depois dela tudo vai ser parâmetros de URL.
+
+00:23:11:07 - 00:23:42:00
+Desconhecido
+A gente vai colocar o em search igual a alguma coisa. Use um comercial para separar um item da outra, ai vai colocar o tema um mídia igual a o que a gente quiser, o exemplo separar. E assim segue até quando chegar na última UTM que a gente depois dela, depois do valor que a gente colocar dentro da UTM, não vai sobrar nada.
+
+00:23:42:00 - 00:24:08:18
+Desconhecido
+Aí não precisa colocar ponto final, não precisa colocar nada. Assim que a gente coloca o último, pode deixar sem nada e vai ficar basicamente assim. Link ponto com BR. Esse link aqui, esse substituído é só um exemplo. Interrogação o tema em seu artigo ou alguma coisa mais comercial para separar o tema em mídia igual a alguma coisa? Região para separar o tema, campanha igual alguma coisa e assim vai.
+
+00:24:08:18 - 00:24:15:07
+Desconhecido
+E quando chega no último não precisa colocar mais nada. Entendido?
+
+00:24:15:09 - 00:24:31:13
+Desconhecido
+Pelo construtor de o tema eu botei aqui um link, mas a gente pode basicamente escrever assim no Google.
+
+00:24:31:16 - 00:24:36:05
+Desconhecido
+A gente vem aqui no Google e escreve.
+
+00:24:36:07 - 00:25:01:17
+Desconhecido
+Construtor dele tem. Eu sempre uso esse sitezinho aqui vai ter o link aqui na descrição que ele é basicamente isso que a gente fez na mão. A gente vai conseguir fazer aqui. Vou dar um exemplo aqui para vocês.
+
+00:25:01:19 - 00:25:12:15
+Desconhecido
+Aqui a gente vai no primeiro campo, a gente vai colocar nosso site, então vamos botar aqui, teste ponto com.br por exemplo.
+
+00:25:12:17 - 00:25:27:16
+Desconhecido
+O campanha Edi, ele tá aqui, mas a gente não usa muito identificador da campanha, né? Se vocês quiserem. Mas vamos lá. O tema é Search. Bota aqui, por exemplo Facebook.
+
+00:25:27:19 - 00:26:27:10
+Desconhecido
+Não tem ninguém botar Fire, o time campeão em campanha, Natal tem theme, Vamos botar conjunto. Dois por exemplo. Coisa muito importante. Pessoal que eu esqueci de dizer para vocês, a gente nunca deve usar nem letra maiúscula, nem espaço, nem caracteres especiais. Ou seja, a gente só vai usar letras minúsculas em vez de espaço. A gente vai colocar o underline ou esse tracinho e não usa acento, nem arroba, nem postagem, nem nada disso, senão o nosso parâmetro vai ficar todo bagunçado, porque em alguns sites eles modificam esses caracteres especiais por outras coisas.
+
+00:26:27:13 - 00:26:32:00
+Desconhecido
+Por exemplo, um cedilha vai virar.
+
+00:26:32:02 - 00:26:42:29
+Desconhecido
+Arroba jogo da velha exclamação Fica um negócio muito bagunçado e a gente não vai conseguir identificar direito. Fazendo análise dos nossos parâmetros.
+
+00:26:43:02 - 00:26:49:25
+Desconhecido
+E o content é um bota aqui Imagem.
+
+00:26:49:28 - 00:26:55:08
+Desconhecido
+Capa Assim, por exemplo.
+
+00:26:55:10 - 00:27:37:04
+Desconhecido
+Aqui a gente tem que preencher direitinho. Só lembrando, pessoal, que a gente tem que botar aqui o https dos pontos, barra a barra antes do site, né? Pode botar também um www. Ponto. Só para ficar certinho mesmo. E aqui ele já vai dar basicamente toda a nossa. A nossa URL já parametrizada. A gente só precisa copiar e colar onde ele quiser para antes a gente for usar isso no Facebook, a gente coloca lá onde tem um link físico para entrar, para clicar, para ir para a nossa linha de peixe ou para nós check out.
+
+00:27:37:07 - 00:28:07:02
+Desconhecido
+Eu em vez de colocar o link normal e colocando ele parametrizado, a gente vai conseguir capturar de onde ele veio. Só que como eu falei para a gente capturar os caminhos, eu preciso previamente se for dessa forma, preencher cada um. Por exemplo, se eu for botar esse link, porque no Facebook a gente coloca na imagem cada e cada mídia, vai ter um link diferente.
+
+00:28:07:04 - 00:28:43:02
+Desconhecido
+Então, se eu tiver um conjunto de dois, um cujo dois tem três fotos, eu preciso criar aqui. Capa um capa dando origem capa três é pegar esse link e colar em cada saída. Por isso que eu disse que isso é um movimento. Isso é um trabalho muito cansativo se vocês forem fazer por aqui. Mas se a gente voltar aqui para a nossa apresentação, eu vou explicar agora justamente esse terceiro ponto como é que a gente faz isso Automaticamente, através das tags dinâmicas que o Facebook disponibiliza para a gente.
+
+00:28:43:02 - 00:29:24:21
+Desconhecido
+Então você deve agora está se perguntando Tá ai eu já parametrizar meu link? Eu já ou eu já coloquei as tags dinâmica lá no facebook E como eu faço agora para captar essas informações? Que beleza! A pessoa vai ficar lá no Facebook, vai trocar no link ou vai clicar a minha tag parametrizada? Vai aparecer lá na URL bonitinha o caminho é como é que eu faço para capturar informações, para analisar posteriormente, para deixar guardado na minha planilha, no meu banco de dados.
+
+00:29:24:23 - 00:29:56:15
+Desconhecido
+Vamos começar agora essa parte é para começar essa parte. Eu já digo logo que a gente vai precisar de um formulário ou um formulário no WordPress ou em qualquer outra área de peixe que vocês tiverem, ou em qualquer outro site que tenha formulários. Mas você vai precisar de um formulário e esses formulários precisam ter campos ocultos ou campos que capturem parâmetros de URL.
+
+00:29:56:17 - 00:30:34:03
+Desconhecido
+Então, antes de vocês contratar uma plataforma, eu lhe pedi o WordPress. Vocês tem que se atentarem a esse detalhe. Já vou logo editando para vocês que usam o WordPress como elemento, vai ter essa opção, então vai ser a opção que eu vou ensinar aqui que acredito eu que seja mais universal que todo mundo usa. Então porque se eu fosse ensinar isso em todas as possibilidades que tem de site que tem formulário, se seria impossível, então vamos ensinar aqui no WordPress com elemento que é o mais popular para todo mundo, né?
+
+00:30:34:05 - 00:30:57:20
+Desconhecido
+Então vamos lá. Aqui tem um popup e dentro desse popup tem um formulário, mas essa é a forma que eu uso. Se vocês quiserem usar um formulário dentro da página, não tem problema. É a mesma lógica. Então vamos clicar aqui em algum campo para editar este campo.
+
+00:30:57:22 - 00:31:28:16
+Desconhecido
+Pronto. Nesse menuzinho lateral vai aparecer os campos do nosso formulário. Nesse item um é onde a pessoa vai colocar o nome dela certo que vai ser do tipo texto normal no telefone vai ser o campo onde ela vai colocar o telefone do tipo telefone ou e-mail. Mesma coisa, vai ser onde ela vai colocar o e-mail e vai ser do tipo email.
+
+00:31:28:19 - 00:32:04:13
+Desconhecido
+Isso aqui é opcional. É um termo de política de privacidade que você coloca que a pessoa está aceitando. Ela assina as informações. Eu queria, mas não é obrigatório. Aqui a gente usa isso só por padrão mesmo. Então pessoal, aqui depois do acordo é o que começa a nossa brincadeira. É onde a gente vai capturar os parâmetros de URL propriamente ditos e como é que a gente vai fazer isso?
+
+00:32:04:15 - 00:32:29:16
+Desconhecido
+A gente já está criado aqui, mas eu vou criar um campo para mostrar para vocês aqui no campo, o tipo do campo. A gente vai procurar o tipo oculto ou se o elemento de vocês estiver em inglês, eu, Rayden, que significa oculto. Aqui, lembro que na etiqueta então é colocar justamente o que a gente quer, tipo, se for theme searching, vai colocar o tema em seu site.
+
+00:32:29:17 - 00:32:36:23
+Desconhecido
+Mídia ainda o coloca meio contente e vai colocar contente. E assim vai.
+
+00:32:36:25 - 00:33:24:02
+Desconhecido
+Quando a gente vem em Advanced vai ter aqui um default que vale o que aqui a gente vai clicar nesse tag dinâmica e a gente vai botar aqui, vai procurar o URL aqui, reconhece Parameters Não é muito bom, mas é justamente para capturar os parâmetros de all in aqui e ID a gente coloca o mesmo nome, dá o tom que a gente quer aqui, o equestre a gente clica em cima e a gente vai botar aqui um get, que é justamente obter os parâmetros da URL que a gente já parametrizar, que é o parâmetro name.
+
+00:33:24:02 - 00:33:57:20
+Desconhecido
+A gente vai colocar de novo qual parâmetro a gente quer. No caso aqui, o Theme Search. Pronto, depois disso é só salvar e fazer isso para cada um dos campos. Aqui tem ter a mesma coisa e é basicamente assim que a gente vai capturar os parâmetros de URL. E agora eu vou mostrar para vocês aonde que a gente verifica esses parâmetros capturados.
+
+00:33:57:23 - 00:34:23:28
+Desconhecido
+Só um adendo aqui pessoal, caso de caso vocês não se lembrem quais são, exultemos para colocar lá nos formulários, é só voltar nessa página aqui que tem elas. Bonitinha, não tem disso. Hoje tem no Medium o Theme Campanha, o tema de URL é o Theme Content. É só copiar e colar bonitinho como tá aqui. Eu vou deixar também aqui o comentário da aula para vocês.
+
+00:34:23:28 - 00:34:53:04
+Desconhecido
+Só copiar e colar colarem. Mas se atentem muito, a escrita não pode ter uma letra a mais ou a -1 acento. Não pode ter nada, tem que ser justamente como está aqui, porque como eu falei, as plataformas fizeram um consentimento para entender que cada coisa dessa é uma coisa. Se tiver uma letra mais ela não vai conseguir reconhecer o theme como theme.
+
+00:34:53:07 - 00:35:18:08
+Desconhecido
+Beleza, então pessoal, para vocês analisarem os campos do formulário de vocês com mais o dente vocês tem que entrar aqui no ar de presente. Elemento em elemento. Vocês vem em submit ou em vírus, se eu não me engano em português. Depois que você entrar vai aparecer todos os formulários de todas as páginas de vocês que o povo preencheu.
+
+00:35:18:10 - 00:35:49:12
+Desconhecido
+E para vocês analisarem você clica numa delas e vai aparecer aqui. Só que eu já vendo o que eu falei anteriormente, eu já venho aqui corrigir porque um estagiário aqui preencheu um médium com o acento não, e provavelmente foi o corretor automático e o content. Ele colocou um e mais ninguém se contente em inglês. Ele voltou contente. Por isso que os espaços estão vazios.
+
+00:35:49:14 - 00:36:18:18
+Desconhecido
+Eu quis mostrar esse exemplo justamente para vocês não cometer esse erro, preencher exatamente como tem ali bonitinho o nome que eu ensinei, porque senão vai aparecer assim, vai aparecer a origem, mas o termo que vocês colocaram diferente vai vir vazio, porque ele capta do parâmetro de URL exatamente a variável do jeito que ela vem. Sabe a letra por letra igualzinho.
+
+00:36:18:21 - 00:36:56:26
+Desconhecido
+Por isso que os que estão escritos certos vai vim aqui o valor bonitinho que o Facebook colocou, mas o que tiver errado ele não vai capturar. Beleza pessoal. Então para vocês verem sozinha elemento Envios ou Submissão. Mas aí vocês me perguntam certo? Então para eu analisar, eu vou ter que abrir o resultado para o resultado? Então pessoal, não, isso aqui eu só estou mostrando para vocês como é que vocês acessam, mas agora vamos adentrar o mundo das automações, que é um mundo que eu gosto muito e vou ensinar agora.
+
+00:36:56:26 - 00:37:08:16
+Desconhecido
+Vocês já fazem um automação bem simples para a gente conseguir que esses envios eles apareçam na planilha automaticamente. Então bora lá!
+
+00:37:08:16 - 00:37:26:17
+Desconhecido
+Então agora para a gente entender como a gente vai fazer isso automaticamente com o Facebook. Eu preciso explicar para vocês. A gente precisa, na verdade, retomar aquele conceito de variável inicial.
+
+00:37:26:19 - 00:38:07:24
+Desconhecido
+Vamos esquecer um pouco mais o termo de agora. Vamos se atentar que é o Facebook. O Facebook Ads. Ele libera para a gente. Pegue dinâmicas que são nada mais nada menos que variáveis que dependendo de onde o nosso líder clicar, ele vai substituir essas variáveis. Por informações da nossa campanha. Eu não sei se deu muito bem pra entender, mas por exemplo, ela vai, o Facebook vai liberar a tag aqui.
+
+00:38:07:27 - 00:38:43:07
+Desconhecido
+A ideia é de que ela vai significar número único do anúncio criado pelo Facebook. É de sete AD a mesma coisa. Só que esse é o conjunto de anúncio e o campanha. Ele também vai ser uma ideia da campanha. Só que esses três não é muito usado, porque para muito com a gente cria uma campanha. A gente não vai decorar o número de identificador de cada coisa, só se você realmente tiver uma automação e a que você já consiga deixar isso prontinho.
+
+00:38:43:07 - 00:39:05:03
+Desconhecido
+Assim, para aí já identificar e já dizer o resultado para você. Só que, como eu acho que a gente vai fazer isso um pouco mais manual para nós mesmos, a gente usa mais o nome. Em vez de usar o ID da campanha, a gente usa o nome da campanha. Então a gente aqui só vai se atentar a algo, ele nem para baixo.
+
+00:39:05:06 - 00:39:16:27
+Desconhecido
+Aqui o MMM vai ser justamente o nome da campanha, o and sete Name, o nome do conjunto de anúncio.
+
+00:39:16:29 - 00:39:45:07
+Desconhecido
+O campo em Name vai ser o nome da campanha. O placement vai ser justamente de onde ele veio e por qual ou qual meio ele vence e define se a listagem é o site Search Name é justamente o identificador de origem. Qual foi a origem desse?
+
+00:39:45:10 - 00:40:13:27
+Desconhecido
+Desse Ligue se ele veio do Instagram, se ele veio do Facebook ou se ele veio da Rede Network, que é uma rede onde o Facebook tem parcerias com algum site que também é exibido o anúncio lá, Então pode vim através dessas três, três fontes. E o que essa dinâmica vai fazer A partir do momento que um link nós clicar no anúncio da gente, ela vai preencher essas ideias.
+
+00:40:13:27 - 00:40:20:05
+Desconhecido
+Como as informações que a gente colocou na nossa campanha.
+
+00:40:20:07 - 00:40:28:08
+Desconhecido
+Então, para cada um desses, a gente vai usar essa chave aqui.
+
+00:40:28:10 - 00:40:57:27
+Desconhecido
+Campanha ID A gente vai botar ela entre chaves. Eu sei que está parecendo um pouco confuso para vocês. Essa parte, porque é a parte realmente mais técnica, mas eu vou disponibilizar para vocês toda a parametrização já pronta só para vocês copiarem e colarem e ver a máquina girando. Aqui vai ficar basicamente assim. Agora a gente vai unir as duas.
+
+00:40:57:27 - 00:41:22:09
+Desconhecido
+Temos as tags dinâmica do Facebook. O que a gente vai fazer aqui é usar uma variável dentro de outra variável. A gente vai usar a variável da UTM e o valor dela não vai ser um valor que a gente vai dizer agora. Vai ser um valor entre chaves que o Facebook vai pegar esse valor entre chaves e vai substituir pelo valor da nossa campanha.
+
+00:41:22:11 - 00:41:57:15
+Desconhecido
+E com isso a gente vai conseguir rastrear tudo o que vai acontecer na nossa campanha, entendeu? Então a gente vai pegar o item Missões, vai botar igual e vai botar o site search nele, que significa a mesma coisa. Só que vai ser com a linguagem universal da UTM e o valor, o Facebook, que vai substituir a tag dinâmica dele pelo valor que a gente colocar lá na nossa campanha, por exemplo, tem aqui campanha o termo campanha igual entre Chaves.
+
+00:41:57:15 - 00:42:33:06
+Desconhecido
+Campanha é basicamente o que o Facebook vai fazer. Vai pegar o o nome da nossa campanha e vai substituir essa tag quando o cliente clicar em um anúncio e vai transformar essa tag no nome da campanha. Então vai ficar ó, tem campanha igual o nome da nossa campanha. Só que a gente tem 30 campanhas, então Facebook toda vez que um cliente clicar, ele vai substituir isso que começa, ele vai substituí, clicou nessa, ele vai substituir, clicou nessa, ele vai substituir.
+
+00:42:33:08 - 00:43:03:08
+Desconhecido
+Então, por isso que chamado tem dinâmica para o negócio fixo. O Facebook vai substituindo para cada clique que entra no nosso anúncio. Acho que ficou claro, né? Mas aí não precisa fazer nada de mais. Pegando isso aqui, dando Control C Control V nesse espaço aqui de parâmetro de URL que vai estar no final. Eu posso até mostrar aqui para vocês que vai estar no final da nossa do nosso anúncio.
+
+00:43:03:11 - 00:43:33:04
+Desconhecido
+Se a gente colocar esse tag zona, ele vai substituir automaticamente. Vamos lá, Eu vou mostrar aqui na prática para vocês. Então aqui dentro do Facebook a gente pode localizar isso aqui, que é o URL do site, que é basicamente onde a gente vai colocar o destino que a pessoa quando clicar no anúncio vai, no caso, algum site. Agora ele pede algum check out e o que eu estou falando?
+
+00:43:33:04 - 00:44:06:01
+Desconhecido
+Vocês vão ver a quantidade de posts aqui. Se a gente fosse fazer manualmente ou por algum construtor de URL, a gente ia ter que fazer a configuração lá. Cada conjunto de anúncio aqui é um, ou seja, para cada conjunto desse a gente tinha que trocar aqui. Conjunto dois Conjunto três Conjunto quatro Conjunto cinco. Além disso, para cada post que a gente tinha que fazer, a gente teria que trocar também.
+
+00:44:06:04 - 00:44:40:17
+Desconhecido
+Teria que colocar Imagem um Imagem dois Imagem três A imagem da capa, a imagem do cliente com o dedo na boca, a imagem, enfim, alguma coisa que a gente soubesse identificar e fazer isso para cada um desses aqui ia dá um trabalhão enorme. Por isso que o que a gente faz hoje em dia a gente bota aqui o nosso site normal no nosso site, sem nenhuma UTM e lá embaixo, lá no final, onde tem que parâmetros de URL, a gente coloca esse link.
+
+00:44:40:19 - 00:45:13:18
+Desconhecido
+E se a identificação das UTM em todos os posts, então é só dar um control C Control V. Eu vou deixar aqui embaixo para vocês nos comentários aqui na área de baixo. E se é essa essa tag, esse é o tema junto com as tags dinâmicas e já bonitinho, só para vocês copiarem, colarem aqui. Só lembrando para vocês não deixarem nenhum espaço aqui antes de começar e nem nenhum espaço aqui no final, porque senão não vai dar certo.
+
+00:45:13:20 - 00:45:34:22
+Desconhecido
+Mas fazendo isso, colocando esse e essa tag aqui nesse espaço, o Facebook vai preencher automaticamente todos os valores da nossa campanha no nosso link. Então tipo, se ela clicar nesse post três, vai aparecer por aqui. Três Ao clicar no post.
+
+00:45:34:25 - 00:45:40:00
+Desconhecido
+Nove vai aparecer por nove. Enfim, vocês já entenderam, né?
+
+00:45:40:00 - 00:46:14:27
+Desconhecido
+Então pessoal, venho aqui apresentar para vocês uma plataforma muito legal para fazer automações. Eu acho que é a plataforma mais simples de se usar que tem no mercado que o nome dela é make, é basicamente make pontocom, então vocês vão entrar nela. Vocês podem fazer login com o Google mesmo aqui e já logado. Eu tenho que explicar dois coisas para vocês o MEI, ele é gratuito até 1000 requisições por mês, então até 1000 requisições por mês você pode fazer gratuitamente.
+
+00:46:14:29 - 00:46:41:25
+Desconhecido
+Acima disso, você vai ter que pagar uma taxa e eu vou explicar direitinho para vocês o que significa requisições. Tá bom? Então vamos lá. O primeiro passo que a gente tem que fazer é vim aqui em cenários e botar aqui em cima. Eita que minha câmera está na frente, mas aqui em cima, aqui tem criar um novo cenário.
+
+00:46:41:27 - 00:46:54:12
+Desconhecido
+Aqui e nosso ambiente de automação aqui em cima a gente dá um nome para o cenário. Vou botar.
+
+00:46:54:14 - 00:47:02:20
+Desconhecido
+A lei de. Formulário.
+
+00:47:02:23 - 00:47:53:13
+Desconhecido
+Nesse, imagino, a gente vai colocar o nosso primeiro nome que nas automações a gente chamam cada etapa de um novo. E o primeiro nó que a gente vai colocar é web e Rukh é é que a gente vai montar o custam web e Rukh. Ai você vai me dizer aí o que é Web rules? Então? Explicar o conceito de web, o que é um negócio um pouco complicado nesse momento vocês não vão precisar saber o que é, mas web nuke falando amadoramente é como se fosse um vigia que esse vigia vai fazer, assim ele vai ficar olhando seu WordPress para assim que alguém preencher o formulário ele vai pegar as informações e enviar para algum
+
+00:47:53:13 - 00:48:17:25
+Desconhecido
+lugar. Ele vai puxar as informações do WordPress e vai enviar para um lugar basicamente isso que é a função do web. Ruki E a gente clica aqui, não é block? Aí ele saiu e ele vai pedir para a gente escolher um. Esses são alguns testes que eu já fiz, mas a gente vai botar aqui, adicionar e vamos dar um nome.
+
+00:48:17:25 - 00:48:44:15
+Desconhecido
+Vamos botar teste, curso um botão assim, por exemplo, e a gente vai botar aqui um save, não precisa mexer em mais nada. Vocês viram que é assim que a gente criou? E digo que ele vai me dar um link. Ela aperta aqui nesse botão cinza assim para copiar. E esse é o famoso Enkidu. É bem Rukh. O que a gente vai ter que fazer agora?
+
+00:48:44:15 - 00:48:59:22
+Desconhecido
+A gente vai ter que voltar no nosso formulário. Eu estou aqui com outro modelo, mas é a mesma coisa. Se eu clicar aqui, vocês vão ver que é os mesmos campos, tudinho.
+
+00:48:59:24 - 00:49:07:20
+Desconhecido
+Só que aqui embaixo vocês vão ver aqui.
+
+00:49:07:22 - 00:49:32:17
+Desconhecido
+Um action after submit ou ações pós envio. E se o ebook não tiver aqui, vocês vão clicar. No mais Zinho e escolher aqui o é de Nuke, mas geralmente ele já vem aqui e quando você você colocar ele aqui, vai abrir essa aba aqui de Web Nuke. A única coisa que a gente vai fazer é colar aquele link aqui.
+
+00:49:32:19 - 00:50:12:22
+Desconhecido
+Colou aquele link aqui, a gente dá um atualiza aqui, aperta salvar e fechar. Cabuçu. Carlúcio Quando a gente fez isso, a nossa, o nosso web Rukh já está instalado, vamos dizer assim, e a gente precisa fazer teste. Eu vou abrir aqui a página. Então gente, aqui está o formulário e aqui tá a página que esse formulário está dentro e eu abri aqui para não fazer o teste, porque quando a gente abre aqui novo meio que está vendo que ele está com o botãozinho.
+
+00:50:12:24 - 00:50:48:03
+Desconhecido
+Girando isso quer dizer que ele está esperando alguma ação acontecer com o formulário para ele captar as informações. E é isso que a gente vai fazer agora. A gente vai preencher aqui. Alguma coisa para justamente ele capturar as informações. E ver se está funcionando, Se a instalação que a gente fez está funcionando, o formulário enviado aparecer aqui o sucesso e interpreta em salvar e pronto.
+
+00:50:48:03 - 00:51:41:13
+Desconhecido
+Nosso web já está instalado na página e já está funcionando. Agora, depois disso, é um mundo de possibilidades. Se vocês forem apertar aqui mais vocês vão ver a exorbitante quantidade de integrações que a gente pode fazer com inúmeras plataformas diferentes. Só que, como isso é um curso básico e a gente só quer analisar nossos vídeos, analisar os dados que tem no nosso line, a gente só vai enviar essas informações para uma planilha, então a gente aperta aqui no Google Sheets e a gente vem aqui em adicionar uma linha aqui em inglês e et a row e provavelmente o de vocês não vai vim conectado, só que o meu já está.
+
+00:51:41:15 - 00:52:08:28
+Desconhecido
+Mas para conectar no seu gmail, onde você deve criar uma planilha, vocês vão vim aqui adicionar e vão apertar aqui, logar com o Google é só você logar comigo igual vocês jogaram para criar conta no mail que já vai fazer o link com as suas planilhas automaticamente. Depois de feito isso a gente vai fazer o que a gente vai precisar criar uma planilha para criar uma planilha.
+
+00:52:09:01 - 00:52:32:18
+Desconhecido
+Eu gosto de fazer assim. Eu acho mais simples. A gente entra no nosso Google Drive em qualquer lugar, em qualquer pasta. Vem com o botão direito e bota o Google Sheets aqui no Google Sheets a gente vai dar um nome teste automação, por exemplo, e a gente vai ter que preencher o cabeçalho. Aí essa aqui já está pronta, por exemplo.
+
+00:52:32:21 - 00:53:02:00
+Desconhecido
+Mas é basicamente a gente vai colocar nome, telefone, e-mail, ainda por e-mail. Já temos o emissor de mídia contente e também eu botei aqui também data, hora e a URL da página. Essas informações vem no e-book e quanto mais informações e informações a gente capturar, melhor, né? Então fiz isso. Eu vou excluir essa planilha aqui só para não confundir a gente.
+
+00:53:02:02 - 00:53:33:10
+Desconhecido
+Quer dizer, vou deixar aqui para mostrar para vocês que ele puxa todas as planilhas. Então aqui no Max eu vou vim aqui nesse campo sozinho aqui para eu selecionar minha planilha. Elas estão dentro da pasta de dados e por exemplo, a gente criou, agora deixa automações e tem alguns dados que aí que eu já tinha criado. Aqui a gente vai selecionar a folha que a folha não é nada mais nada menos que as abas aqui embaixo.
+
+00:53:33:12 - 00:54:04:17
+Desconhecido
+E ele já vai puxar automaticamente todas aí as colunas e todas as colunas da nossa planilha e as colunas que já vem com nomezinho aqui no cabeçalho que a gente colocou. E agora? O que a gente vai fazer? A gente vai colocar a informação do ebook dentro de cada campo, de cada planilha. Quando a gente clica aqui, ele já vai mostrar aqui os campos que o nosso ebook capturou.
+
+00:54:04:19 - 00:54:36:21
+Desconhecido
+Nesse caso aqui. Vocês estão vendo aqui que a gente criou a o cabeçalho, o nome e tem aqui o campo do nosso formulário chamado Nome. Então venho aqui nessa setinha e vou clicar em velho ou value. O valor em português dentro do campo 11 o nome valor. No telefone a mesma coisa. Eu vim aqui em Phone e vou em value.
+
+00:54:36:23 - 00:54:45:07
+Desconhecido
+No e-mail a mesma coisa, sempre o valor.
+
+00:54:45:10 - 00:54:53:19
+Desconhecido
+E eu vou preenchendo. Aqui eu chego acompanhando o tema e source mesma coisa.
+
+00:54:53:22 - 00:54:59:27
+Desconhecido
+O tema é a mesma coisa.
+
+00:55:00:00 - 00:55:06:21
+Desconhecido
+O tema é content, a mesma coisa.
+
+00:55:06:24 - 00:55:09:14
+Desconhecido
+A.
+
+00:55:09:16 - 00:55:28:25
+Desconhecido
+Gente, tem meter na mesma coisa. E até me a mesma coisa em data eu venho em data e valor também. Hora vem mim time.
+
+00:55:28:27 - 00:56:02:00
+Desconhecido
+Value também e página eu venho um page URL e coloco o valor também e salvo. Quando eu salvar eu vou apertar nesse estar que venho aqui pra ele roda a automação para a gente ver se está tudo funcionando. Então clico aqui e ele vai começar a girar esperando alguma informação e eu venho aqui novamente. Preencho, teste.
+
+00:56:02:03 - 00:56:14:19
+Desconhecido
+Leio meia, teste arroba teste ponto com aceito o termo envio.
+
+00:56:14:22 - 00:56:58:06
+Desconhecido
+Pronto, vocês viram que ele parou de girar e deu o verdinho. Se a gente entrar na nossa planilha, a gente vai ver que todas as informações que a gente tinha apareceram aqui. O teste, o telefone, o e-mail. A data, a hora. É só não tem mais o tênis porque eu não sei nem porque essa apareceu aqui. Sinceramente, falando, mas as últimas estão vazias porque o nosso link que a gente preencheu ele não está parametrizado, ele só está só tem um link.
+
+00:56:58:09 - 00:57:32:20
+Desconhecido
+Vamos parametrizar ele para a gente ver como funciona. Vamos usar aqui. No caso, como ele não tem campanha, a gente vai usar aqui o UTMB. Como vocês já viram nas aulas passadas. Eu vou deixar isso aqui mesmo. O seu Facebook, o Milhão Feed um da campanha Conjunto Limpo e ele já vai dar aqui o link parametrizado. Agora se a gente entrar pelo link parametrizado, no caso eu tenho que.
+
+00:57:32:23 - 00:57:56:15
+Desconhecido
+Já que a gente testou, vou logo falando isso aqui quando a gente testar para em vez de ficar apertando mais e esperando toda vez que alguém preencha, a gente ativa essa opção aqui para ativar imediatamente quando a gente receber alguma informação, ou seja, quando alguém preencher o formulário. Então, com isso ativado, a gente não precisa mais Se preocupar com ele.
+
+00:57:56:15 - 00:58:35:12
+Desconhecido
+A gente pode fechar e deixar ele trabalhando sozinho por traz. Só uma atentou alguma coisa quando eu falei que o MEI que ele tem 1000 requisições por mês grátis, requisições é basicamente isso. Está vendo esse numerozinho que apareceu em cada nó? Cada um desses é uma requisição. Tanto que se a gente for voltar aqui, a gente vê que de 1000 que eu tenho por mês, agora tem 998, porque na automação que eu fiz foram usadas duas requisições.
+
+00:58:35:15 - 00:58:59:24
+Desconhecido
+Então tipo, dependendo da sua automação pode usar muito mais. Mas nessa aqui a gente só vai usar duas, que é uma do ebook e uma do Google Sheets. Então vamos supor, se a gente quer 1000 por mês, cada lide que entrar a gente tem 500 por mês, entendeu? Porque vão se usar duas requisições para cada envio para a planilha, vamos dizer assim.
+
+00:58:59:26 - 00:59:08:29
+Desconhecido
+Mas não se preocupe porque não é muito caro. Mas vai dar o que? É uns 50 R$ por mês. Assim, muitas requisições.
+
+00:59:09:02 - 00:59:25:00
+Desconhecido
+Mais então vamos lá preencher agora nossa está nossa URL parametrizada. Vamos preencher aqui agora.
+
+00:59:25:02 - 00:59:32:00
+Desconhecido
+A.
+
+00:59:32:03 - 00:59:36:25
+Desconhecido
+Aceita os termos? Aperte em Continuar.
+
+00:59:36:27 - 00:59:50:01
+Desconhecido
+Enviado com sucesso. Se a gente voltar na nossa planilha aqui.
+
+00:59:50:04 - 01:00:04:01
+Desconhecido
+Calma, gente, vamos voltar aqui. Eu não sei porque aqui está aparecendo o termo campo. Bem, isso deve ser coisa do meio que vamos voltar aqui no meio que.
+
+01:00:04:04 - 01:00:14:28
+Desconhecido
+Olha, olha aí a pegadinha. Por isso que vocês devem se atentar aqui no tema também. Em vez de eu clicar.
+
+01:00:15:01 - 01:00:43:10
+Desconhecido
+No valor eu cliquei no título. Então aqui a gente só substitui título, o valor salva e vamos testar mais uma vez para ver se está salvo certinho.
+
+01:00:43:12 - 01:00:53:12
+Desconhecido
+Vamos lá continuar.
+
+01:00:53:15 - 01:01:30:00
+Desconhecido
+Agora. Agora vocês viram que está certinho e está chegando o nome, telefone, e-mail. O tema é seu. Esse o milhão, o contente, o teu caminho É agora que eu alterei o erro. Está aparecendo Campanha Natal a data, a hora e a página que o nosso líder acessou. Então pessoal, basicamente de automação é isso, A gente percorreu esse caminho todo para a gente ter esse relatório lindo aqui do nossos clientes.
+
+01:01:30:00 - 01:01:55:23
+Desconhecido
+Número de telefone e a origem de onde eles vieram. Então gente, eu só vou dar uma dica eu não vou nem explicar muito a fundo essa dica, mas porque eu pretendo fazer um curso só disso. Mas existe a possibilidade também de, em vez de a gente acompanhar todos os dias por uma planilha, a gente pode criar um dashboard personalizado para a gente ter nossos dados mais visuais.
+
+01:01:55:26 - 01:02:13:04
+Desconhecido
+A única coisa que a gente precisa fazer e vem aqui extensões, é apertar aqui em lugar estúdio, criar um relatório e apertar em criar. Eu, como disse, não vou me adentrar fundo nisso agora.
+
+01:02:13:07 - 01:02:17:27
+Desconhecido
+Porque.
+
+01:02:18:00 - 01:02:29:09
+Desconhecido
+Eu quero fazer um curso só disso para mostrar para vocês.
+
+01:02:29:11 - 01:02:59:23
+Desconhecido
+Então, aqui no nosso estúdio a gente tem aqui todas as informações e em meia hora, data, telefone. Aí temos. E com isso a gente pode montar vários gráficos regional, pode botar por linha, pode fazer uma infinidade de coisas. Como eu disse, eu só queria mostrar isso aqui para vocês, porque com automação básica dessa de planilha, a gente consegue mudar muita coisa aqui.
+
+01:02:59:23 - 01:03:27:11
+Desconhecido
+Então pessoal, esse foi nosso curso de rastreamento de dados. Eu espero que tenha sido um curso e um curso introdutório, mas que tenha sido de grande valia para vocês e espero que a partir desse momento vocês consigam rastrear seus dados. A origem dos dados, de onde veio, de que campanha? Porque a gente sabe que o Facebook hoje em dia ele não dá as métricas certas pra gente e a gente precisa fazer isso manualmente.
+
+01:03:27:13 - 01:03:38:11
+Desconhecido
+Então, espero que vocês tenham gostado e qualquer dúvida pode escrever embaixo das aulas que eu vou respondê la, respondê las pra vocês. E é isso, pessoal! Até o próximo post!
+
