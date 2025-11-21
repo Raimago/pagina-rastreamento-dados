@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aprenda Rastreamento de Dados com UTM, parâmetros de URL e automação. Curso completo da RA Digital.">
+    <title>Curso de Rastreamento de Dados | RA Digital</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
+    <link rel="apple-touch-icon" href="assets/favicon.png">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MHMCPSMM');</script>
+    <!-- End Google Tag Manager -->
+</head>
+<body>
+    <!-- Noise Overlay -->
+    <div class="noise-overlay"></div>
+    
+    <!-- SVG Filters para borda animada -->
+    <svg class="svg-container" style="position: absolute; width: 0; height: 0;">
+        <defs>
+            <filter id="electric-border" colorInterpolationFilters="sRGB" x="-20%" y="-20%" width="140%" height="140%">
+                <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="10" result="noise1" seed="1" />
+                <feOffset in="noise1" dx="0" dy="0" result="offsetNoise1">
+                    <animate attributeName="dy" values="700; 0" dur="6s" repeatCount="indefinite" calcMode="linear" />
+                </feOffset>
+                <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="10" result="noise2" seed="1" />
+                <feOffset in="noise2" dx="0" dy="0" result="offsetNoise2">
+                    <animate attributeName="dy" values="0; -700" dur="6s" repeatCount="indefinite" calcMode="linear" />
+                </feOffset>
+                <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="10" result="noise1" seed="2" />
+                <feOffset in="noise1" dx="0" dy="0" result="offsetNoise3">
+                    <animate attributeName="dx" values="490; 0" dur="6s" repeatCount="indefinite" calcMode="linear" />
+                </feOffset>
+                <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="10" result="noise2" seed="2" />
+                <feOffset in="noise2" dx="0" dy="0" result="offsetNoise4">
+                    <animate attributeName="dx" values="0; -490" dur="6s" repeatCount="indefinite" calcMode="linear" />
+                </feOffset>
+                <feComposite in="offsetNoise1" in2="offsetNoise2" result="part1" />
+                <feComposite in="offsetNoise3" in2="offsetNoise4" result="part2" />
+                <feBlend in="part1" in2="part2" mode="color-dodge" result="combinedNoise" />
+                <feDisplacementMap in="SourceGraphic" in2="combinedNoise" scale="30" xChannelSelector="R" yChannelSelector="B" />
+            </filter>
+        </defs>
+    </svg>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MHMCPSMM"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="assets/logo.png" alt="RA Digital" class="logo-img" id="headerLogo">
+                </div>
+                <nav class="nav">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema"></button>
+                    <a href="#" class="btn-nav">QUERO ME INSCREVER AGORA</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-divider"></div>
+        <div class="container">
+            <div class="hero-logo-container">
+                <div class="red-line parallax" data-speed="0.1"></div>
+                <img src="assets/logo.png" alt="RA Digital" class="hero-logo parallax" id="heroLogo" data-speed="0.15">
+                <div class="red-line parallax" data-speed="0.1"></div>
+            </div>
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    O <span class="facebook-highlight">Facebook</span> não dá as métricas certas pra gente
+                </h1>
+                <div class="hero-typewriter">
+                    <span class="typewriter-url">www.seusite.com.br/?</span><span class="typewriter-code highlight-text"></span>
+                </div>
+                <p class="hero-subtitle">
+                    E a gente precisa fazer isso manualmente. Aprenda a rastrear seus dados e descubra de onde cada lead veio, de qual campanha, qual anúncio performou melhor.
+                </p>
+                <p class="hero-cta-text">
+                    Neste curso você vai aprender:
+                </p>
+                <ul class="hero-list">
+                    <li>Como capturar dados de onde cada lead veio do <span class="facebook-highlight">Facebook</span> Ads</li>
+                    <li>Como identificar de qual campanha e qual anúncio cada cliente clicou</li>
+                    <li>Como otimizar suas campanhas sabendo onde colocar mais verba e onde tirar</li>
+                </ul>
+                <a href="#preco" class="btn btn-primary btn-large">
+                    QUERO DOMINAR O RASTREAMENTO DE DADOS
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demonstração Interativa de UTMs -->
+    <section class="utm-demo">
+        <div class="container">
+            <h2 class="section-title">Teste o Poder das UTMs Agora</h2>
+            <p class="section-description">Veja como funciona o rastreamento em tempo real</p>
+            
+            <div class="utm-builder">
+                <div class="utm-builder-input">
+                    <label for="utm-base-url">Seu site:</label>
+                    <input type="text" id="utm-base-url" placeholder="https://seusite.com.br" value="https://seusite.com.br">
+                </div>
+                
+                <div class="utm-builder-buttons">
+                    <button class="utm-source-btn" data-source="facebook" data-medium="cpc" data-campaign="vendas">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                        Facebook Ads
+                    </button>
+                    <button class="utm-source-btn" data-source="instagram" data-medium="cpc" data-campaign="vendas">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                        Instagram Ads
+                    </button>
+                    <button class="utm-source-btn" data-source="email" data-medium="email" data-campaign="newsletter">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                        Email Marketing
+                    </button>
+                </div>
+                
+                <div class="utm-result">
+                    <label>URL Gerada:</label>
+                    <div class="utm-result-box">
+                        <code id="utm-result-url" class="utm-url-code">https://seusite.com.br</code>
+                        <button class="utm-copy-btn" id="utm-copy-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                            </svg>
+                            Copiar
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="utm-preview">
+                    <h3>Como apareceria no Analytics:</h3>
+                    <div class="utm-preview-data">
+                        <div class="utm-preview-item">
+                            <span class="utm-preview-label">Source:</span>
+                            <code class="utm-preview-value" id="preview-source">-</code>
+                        </div>
+                        <div class="utm-preview-item">
+                            <span class="utm-preview-label">Medium:</span>
+                            <code class="utm-preview-value" id="preview-medium">-</code>
+                        </div>
+                        <div class="utm-preview-item">
+                            <span class="utm-preview-label">Campaign:</span>
+                            <code class="utm-preview-value" id="preview-campaign">-</code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Logos Marquee -->
+    <section class="logos-marquee">
+        <div class="marquee-container">
+            <div class="marquee-track">
+                <div class="marquee-item">Facebook Ads</div>
+                <div class="marquee-item">Google Analytics</div>
+                <div class="marquee-item">Google Tag Manager</div>
+                <div class="marquee-item">Looker Studio</div>
+                <div class="marquee-item">Make (Integromat)</div>
+                <div class="marquee-item">WordPress</div>
+                <div class="marquee-item">Elementor</div>
+                <div class="marquee-item">Facebook Ads</div>
+                <div class="marquee-item">Google Analytics</div>
+                <div class="marquee-item">Google Tag Manager</div>
+                <div class="marquee-item">Looker Studio</div>
+                <div class="marquee-item">Make (Integromat)</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Atenção Section -->
+    <section class="atencao">
+        <div class="container">
+            <h2 class="section-title-large">Preste atenção:</h2>
+            <div class="atencao-grid">
+                <div class="atencao-item">
+                    <h3>Você não precisa mais se sentir perdido</h3>
+                </div>
+                <div class="atencao-item">
+                    <h3>Nem aceitar métricas erradas do <span class="facebook-highlight">Facebook</span></h3>
+                </div>
+                <div class="atencao-item">
+                    <h3>Existe um caminho validado para rastrear dados corretamente</h3>
+                </div>
+                <div class="atencao-item">
+                    <h3>Com método, processos e diferenciação</h3>
+                </div>
+                <div class="atencao-item highlight-box">
+                    <h3>E você irá conhecer esse caminho agora:</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professor Section -->
+    <section class="professor">
+        <div class="container">
+            <h2 class="section-title">QUEM É O SEU INSTRUTOR</h2>
+            <div class="professor-content">
+                <div class="professor-image">
+                    <img src="conteudo/fotos professor/DSC_0125.jpg" alt="Rai Arruda" class="professor-photo">
+                </div>
+                <div class="professor-info">
+                    <h3 class="professor-name">Rai Arruda</h3>
+                    <p class="professor-description">
+                        Especialista em marketing digital e rastreamento de dados, com anos de experiência ajudando empresas a otimizarem suas campanhas através do rastreamento correto de dados. Criador da RA Digital e mentor de centenas de profissionais que transformaram seus resultados através do conhecimento prático e aplicável.
+                    </p>
+                    <div class="professor-stats">
+                        <div class="professor-stat">
+                            <div class="stat-number">+500</div>
+                            <div class="stat-label">Alunos formados</div>
+                        </div>
+                        <div class="professor-stat">
+                            <div class="stat-number">+5</div>
+                            <div class="stat-label">Anos de experiência</div>
+                        </div>
+                        <div class="professor-stat">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Focado em resultados</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Casos Reais Section -->
+    <section class="casos-reais">
+        <div class="container">
+            <h2 class="section-title">CASOS REAIS</h2>
+            <div class="casos-grid">
+                <div class="caso-item">
+                    <div class="caso-avatar">FV</div>
+                    <h3>Felipe Vargas</h3>
+                    <p class="caso-role">@ofelipevargass</p>
+                    <p class="caso-text">De não saber rastrear dados, para especialista que fatura R$ 16 mil.</p>
+                </div>
+                <div class="caso-item">
+                    <div class="caso-avatar">AC</div>
+                    <h3>Ana Cecília</h3>
+                    <p class="caso-role">@anaceciliacarreiro</p>
+                    <p class="caso-text">Fechei meu maior contrato otimizando campanhas com rastreamento correto.</p>
+                </div>
+                <div class="caso-item">
+                    <div class="caso-avatar">GE</div>
+                    <h3>Glauco Erasmo</h3>
+                    <p class="caso-role">@glaucoerasmo</p>
+                    <p class="caso-text">Aumentei meus resultados 5x em menos de 2 meses.</p>
+                </div>
+                <div class="caso-item">
+                    <div class="caso-avatar">GF</div>
+                    <h3>Gabriel Freilandes</h3>
+                    <p class="caso-role">@gabrielfreilandes</p>
+                    <p class="caso-text">Nunca tinha rastreado dados antes. Hoje atendo grandes empresas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conteúdo Section -->
+    <section class="conteudo-curso">
+        <div class="container">
+            <h2 class="section-title">O QUE VOCÊ VAI APRENDER</h2>
+            <div class="conteudo-grid bento-grid">
+                <div class="conteudo-item bento-item bento-featured spotlight-card">
+                    <h3>UTM - Universal Tracking Module</h3>
+                    <p>Conheça a história do <code class="code-term">UTM</code> e os 5 parâmetros principais: <code class="code-term">utm_source</code> (origem), <code class="code-term">utm_medium</code> (meio), <code class="code-term">utm_campaign</code> (campanha), <code class="code-term">utm_term</code> (termo) e <code class="code-term">utm_content</code> (conteúdo).</p>
+                </div>
+                <div class="conteudo-item bento-item bento-vertical spotlight-card">
+                    <h3>O Que É Rastreamento de Dados</h3>
+                    <p>Entenda a diferença entre rastreamento e tratamento de dados. Aprenda a capturar informações cruciais: nome, e-mail, telefone e principalmente de onde cada lead veio.</p>
+                </div>
+                <div class="conteudo-item bento-item spotlight-card">
+                    <h3>Conceito de Variáveis</h3>
+                    <p>Aprenda o conceito fundamental de <code class="code-term">variáveis</code> na programação. Entenda como funcionam as "caixinhas" que guardam informações e como aplicá-las no rastreamento.</p>
+                </div>
+                <div class="conteudo-item bento-item spotlight-card">
+                    <h3>Parâmetros de <code class="code-term">URL</code></h3>
+                    <p>Domine os parâmetros de <code class="code-term">URL</code> - variáveis usadas nos links. Aprenda a estrutura completa e veja exemplos reais de como grandes empresas usam isso para rastrear atividades.</p>
+                </div>
+                <div class="conteudo-item bento-item spotlight-card">
+                    <h3>3 Formas de Parametrizar Links</h3>
+                    <p>Aprenda a criar links parametrizados manualmente, usando construtores de <code class="code-term">UTM</code> e automaticamente com tags dinâmicas do <span class="facebook-highlight">Facebook</span> Ads para otimizar seu tempo.</p>
+                </div>
+                <div class="conteudo-item bento-item spotlight-card">
+                    <h3>Captura em Formulários</h3>
+                    <p>Configure formulários no <code class="code-term">WordPress</code>/<code class="code-term">Elementor</code> com campos ocultos para capturar parâmetros de <code class="code-term">URL</code>. Aprenda a usar tags dinâmicas e obter os dados corretamente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bônus Section -->
+    <section class="bonus">
+        <div class="container">
+            <p class="bonus-label">Tem mais:</p>
+            <h2 class="section-title">Bônus para acelerar os seus resultados</h2>
+            <div class="bonus-timeline">
+                <div class="bonus-timeline-line"></div>
+                <div class="bonus-item-modern spotlight-card">
+                    <div class="bonus-badge">BÔNUS 1</div>
+                    <div class="bonus-content">
+                        <div class="bonus-icon-modern">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="#FF0000">
+                                <path d="M10 16.5l6-4.5-6-4.5v9zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+                            </svg>
+                        </div>
+                        <h3 class="bonus-title-modern">Templates de UTM Prontos</h3>
+                        <p class="bonus-text-modern">Receba templates prontos com todas as tags dinâmicas do <span class="facebook-highlight">Facebook</span> já configuradas. Copie, cole e use imediatamente nos seus anúncios.</p>
+                        <p class="bonus-text-modern">Você não precisa criar do zero, mas o que você precisar usar, estará lá.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparação Antes/Depois -->
+    <section class="comparacao">
+        <div class="container">
+            <h2 class="section-title">A Diferença que o Rastreamento Correto Faz</h2>
+            <div class="comparacao-grid">
+                <div class="comparacao-card antes">
+                    <div class="comparacao-badge">❌ SEM RASTREAMENTO</div>
+                    <div class="comparacao-content">
+                        <ul class="comparacao-list">
+                            <li>❌ Não sabe de onde vem cada lead</li>
+                            <li>❌ Métricas confusas do Facebook</li>
+                            <li>❌ Não identifica campanhas que funcionam</li>
+                            <li>❌ Gasta dinheiro sem saber o retorno</li>
+                            <li>❌ Decisões baseadas em "achismo"</li>
+                            <li>❌ Perde oportunidades de otimização</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="comparacao-card depois">
+                    <div class="comparacao-badge sucesso">✅ COM RASTREAMENTO</div>
+                    <div class="comparacao-content">
+                        <ul class="comparacao-list">
+                            <li>✅ Sabe exatamente a origem de cada lead</li>
+                            <li>✅ Dados precisos e confiáveis</li>
+                            <li>✅ Identifica campanhas vencedoras</li>
+                            <li>✅ ROI claro de cada investimento</li>
+                            <li>✅ Decisões baseadas em dados reais</li>
+                            <li>✅ Otimiza continuamente os resultados</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline de Resultados -->
+    <section class="timeline-resultados">
+        <div class="container">
+            <h2 class="section-title">O Que Você Vai Conquistar</h2>
+            <p class="section-description">Veja sua evolução mês a mês</p>
+            
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-marker">7</div>
+                    <div class="timeline-content">
+                        <h3>Primeira Semana</h3>
+                        <p>Você já estará capturando dados corretamente e identificando de onde vêm seus leads.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker">30</div>
+                    <div class="timeline-content">
+                        <h3>Primeiro Mês</h3>
+                        <p>Terá dados suficientes para identificar quais campanhas estão performando melhor e começar a otimizar seu investimento.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker">90</div>
+                    <div class="timeline-content">
+                        <h3>3 Meses</h3>
+                        <p>Estará otimizando suas campanhas com precisão, aumentando ROI e reduzindo desperdícios. Resultados mensuráveis e consistentes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preço Section -->
+    <section id="preco" class="preco">
+        <div class="container">
+            <div class="preco-layout">
+                <!-- Coluna Esquerda: Pergunta -->
+                <div class="preco-left">
+                    <h2 class="preco-question">Quanto você precisará investir?</h2>
+                    <p class="preco-description">Torne-se um especialista em rastreamento de dados e otimize suas campanhas do <span class="facebook-highlight">Facebook</span> Ads</p>
+                </div>
+
+                <!-- Coluna Central: Card de Preço -->
+                <div class="preco-center">
+                    <div class="preco-card-wrapper">
+                        <div class="preco-card-border-outer">
+                            <div class="preco-card-modern border-beam-card">
+                                <div class="preco-card-glow-layer-1"></div>
+                                <div class="preco-card-glow-layer-2"></div>
+                                <div class="preco-card-overlay-1"></div>
+                                <div class="preco-card-overlay-2"></div>
+                                <div class="preco-card-background-glow"></div>
+                                <div class="preco-card-content">
+                                    <div class="preco-card-header">
+                            <div class="preco-logo-section">
+                                <h3 class="preco-logo-title">RA DIGITAL</h3>
+                                <p class="preco-logo-subtitle">RASTREAMENTO DE DADOS</p>
+                            </div>
+                            <div class="preco-access-toggle">
+                                <span class="preco-access-active">1 ano de acesso</span>
+                            </div>
+                        </div>
+                        
+                        <div class="preco-value-modern">
+                            <span class="preco-currency-modern">R$</span>
+                            <span class="preco-amount-modern">297,00</span>
+                        </div>
+                        
+                        <p class="preco-parcela-modern">ou 12x de R$ 29,70</p>
+                        
+                        <a href="#" class="btn btn-primary-modern">
+                            QUERO ME INSCREVER AGORA
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-left: 8px;">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                        
+                        <p class="preco-seguranca-modern">Compra 100% segura! Receba seu acesso imediatamente após a confirmação do pagamento.</p>
+                        
+                                    <div class="preco-payment-methods">
+                                        <div class="payment-method">Hotmart</div>
+                                        <div class="payment-method">Mastercard</div>
+                                        <div class="payment-method">VISA</div>
+                                        <div class="payment-method">BOLETO</div>
+                                        <div class="payment-method">PayPal</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coluna Direita: Benefícios -->
+                <div class="preco-right">
+                    <h3 class="preco-benefits-title">O que está incluído:</h3>
+                    <ul class="preco-benefits-list">
+                        <li>✓ Curso completo de rastreamento de dados</li>
+                        <li>✓ 1 ano de acesso</li>
+                        <li>✓ Templates de UTM prontos</li>
+                        <li>✓ Bônus exclusivos</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="garantia-box-simple">
+                <h3 class="garantia-subtitle-simple">Seu risco é zero</h3>
+                <h4 class="garantia-title-simple">Garantia de 7 dias</h4>
+                <p class="garantia-text-simple">Você tem, por lei, o direito de testar o produto durante 7 dias. Se dentro desse período você achar que o curso não é para você, por qualquer motivo, solicite o reembolso.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <div class="faq-layout">
+                <!-- Coluna Esquerda: Título e Botões -->
+                <div class="faq-left">
+                    <h2 class="faq-title-main">Ficou com alguma dúvida?</h2>
+                    <p class="faq-subtitle-main">Confira as respostas para as perguntas frequentes ou entre em contato conosco:</p>
+                    
+                    <div class="faq-buttons-modern">
+                        <a href="#" class="btn-faq-modern btn-whatsapp-modern">
+                            <div class="btn-faq-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                                </svg>
+                            </div>
+                            <div class="btn-faq-content">
+                                <div class="btn-faq-title">ATENDIMENTO POR WHATSAPP</div>
+                                <div class="btn-faq-subtitle">Toque aqui para tirar as suas dúvidas</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Coluna Direita: Perguntas FAQ -->
+                <div class="faq-right">
+                    <div class="faq-list">
+                <div class="faq-item spotlight-card">
+                    <div class="faq-question">
+                        <h3>Preciso entender de programação?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Não! O curso foi desenvolvido para iniciantes. Você vai aprender desde os conceitos básicos de variáveis até a implementação prática completa, sem necessidade de conhecimento prévio em programação.</p>
+                    </div>
+                </div>
+                <div class="faq-item spotlight-card">
+                    <div class="faq-question">
+                        <h3>Por quanto tempo terei acesso ao curso?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Você tem acesso por 1 ano! Durante esse período, pode assistir quantas vezes quiser e receber todas as atualizações do curso.</p>
+                    </div>
+                </div>
+                <div class="faq-item spotlight-card">
+                    <div class="faq-question">
+                        <h3>O curso ensina automação?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim! O curso inclui uma automação simples com Make (gratuito até 1000 requisições/mês) para integração automática com planilhas, permitindo que você tenha seus dados organizados sem trabalho manual e possa analisar o desempenho das suas campanhas do <span class="facebook-highlight">Facebook</span> Ads.</p>
+                    </div>
+                </div>
+                <div class="faq-item spotlight-card">
+                    <div class="faq-question">
+                        <h3>Preciso ter WordPress para fazer o curso?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>O curso é focado em WordPress com Elementor, que é a plataforma mais popular. Mas os conceitos podem ser aplicados em outras plataformas que tenham formulários com campos ocultos.</p>
+                    </div>
+                </div>
+                <div class="faq-item spotlight-card">
+                    <div class="faq-question">
+                        <h3>Como funciona a garantia?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oferecemos garantia incondicional de 7 dias. Se não ficar satisfeito, devolvemos 100% do seu dinheiro.</p>
+                    </div>
+                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/logo.png" alt="RA Digital" class="logo-img-footer" id="footerLogo">
+                </div>
+                <p class="footer-text">RA Digital © 2024</p>
+                <div class="footer-links">
+                    <a href="#">POLÍTICA DE PRIVACIDADE</a>
+                    <span>•</span>
+                    <a href="#">TERMOS DE USO</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal de Inscrição -->
+    <div id="inscricaoModal" class="modal">
+        <div class="modal-wrapper">
+            <div class="modal-border-outer">
+                <div class="modal-content">
+                    <div class="modal-glow-layer-1"></div>
+                    <div class="modal-glow-layer-2"></div>
+                    <div class="modal-overlay-1"></div>
+                    <div class="modal-overlay-2"></div>
+                    <div class="modal-background-glow"></div>
+                    <div class="modal-inner-content">
+                        <span class="modal-close">&times;</span>
+                        <div class="modal-logo-section">
+                            <img src="assets/logo.png" alt="RA Digital" class="modal-logo-img">
+                        </div>
+                        <h2>Complete sua inscrição</h2>
+                        <p class="modal-subtitle">Preencha seus dados abaixo para garantir sua vaga</p>
+                        <form id="inscricaoForm" class="modal-form">
+                <div class="form-group">
+                    <label for="nome">Nome completo *</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail *</label>
+                    <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Telefone *</label>
+                    <input type="tel" id="telefone" name="telefone" required placeholder="(00) 00000-0000">
+                </div>
+                
+                <!-- Campos ocultos para UTMs -->
+                <input type="hidden" id="utm_source" name="utm_source">
+                <input type="hidden" id="utm_medium" name="utm_medium">
+                <input type="hidden" id="utm_campaign" name="utm_campaign">
+                <input type="hidden" id="utm_term" name="utm_term">
+                <input type="hidden" id="utm_content" name="utm_content">
+                
+                            <button type="submit" class="btn btn-primary btn-block">FINALIZAR INSCRIÇÃO</button>
+                            <p class="form-note">Ao se inscrever, você concorda com nossos termos de uso e política de privacidade.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botão Flutuante WhatsApp -->
+    <a href="https://wa.me/5511999999999?text=Olá!%20Tenho%20dúvidas%20sobre%20o%20curso%20de%20Rastreamento%20de%20Dados" 
+       class="whatsapp-float" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       aria-label="Fale conosco no WhatsApp">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
