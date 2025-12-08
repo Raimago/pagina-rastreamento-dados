@@ -1224,29 +1224,10 @@ function detectDeviceModel(userAgent) {
     return 'Unknown';
 }
 
-// Função para capturar geolocalização (requer permissão do usuário)
+// Função para capturar geolocalização (desabilitada - não solicita permissão)
 async function captureGeolocation() {
-    return new Promise((resolve) => {
-        if (!navigator.geolocation) {
-            resolve(null);
-            return;
-        }
-
-        navigator.geolocation.getCurrentPosition(
-            (position) => {
-                resolve({
-                    latitude: position.coords.latitude,
-                    longitude: position.coords.longitude,
-                    accuracy: position.coords.accuracy
-                });
-            },
-            (error) => {
-                // Usuário negou permissão ou erro
-                resolve(null);
-            },
-            { timeout: 5000, enableHighAccuracy: false }
-        );
-    });
+    // Retorna null sem solicitar permissão de localização
+    return null;
 }
 
 // Função para capturar IP e localização via API externa
@@ -1760,7 +1741,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     const sckEncoded = encodeURIComponent(sck);
                     
                     // Construir URL completa com parâmetros
-                    const hotmartUrl = `https://go.hotmart.com/L102235915A?ap=9039&name=${nomeValue}&email=${emailValue}&phonenumber=${telefoneValue}&utm_source=${utmSource}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&utm_content=${utmContent}&utm_term=${utmTerm}&sck=${sckEncoded}`;
+                    const hotmartUrl = `https://pay.hotmart.com/V99597636U?name=${nomeValue}&email=${emailValue}&phonenumber=${telefoneValue}&utm_source=${utmSource}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&utm_content=${utmContent}&utm_term=${utmTerm}&sck=${sckEncoded}`;
                     
                     // Redirecionar para a página de compra da Hotmart após 2 segundos
                     setTimeout(() => {
