@@ -461,7 +461,7 @@ function initForm() {
     const form = document.getElementById('formulario');
     if (!form) return;
 
-    const telefoneInput = document.getElementById('telefone');
+    const telefoneInput = document.getElementById('form-field-phone');
     if (telefoneInput) {
         telefoneInput.addEventListener('input', (e) => {
             let value = e.target.value.replace(/\D/g, '');
@@ -479,9 +479,9 @@ function initForm() {
     form.addEventListener('submit', (e) => {
         e.preventDefault();
 
-        const nome = document.getElementById('nome')?.value.trim();
-        const email = document.getElementById('email')?.value.trim();
-        const telefone = document.getElementById('telefone')?.value.trim();
+        const nome = document.getElementById('form-field-nome')?.value.trim();
+        const email = document.getElementById('form-field-email')?.value.trim();
+        const telefone = document.getElementById('form-field-phone')?.value.trim();
 
         if (!nome || nome.length < 3) {
             alert('Por favor, insira seu nome completo.');
@@ -1461,7 +1461,7 @@ function openModal() {
 
     // Focar no primeiro campo
     setTimeout(() => {
-        document.getElementById('nome').focus();
+        document.getElementById('form-field-nome').focus();
     }, 300);
 }
 
@@ -1554,7 +1554,7 @@ function formatPhone(input) {
 
 // Adicionar formatação ao campo de telefone
 document.addEventListener('DOMContentLoaded', function () {
-    const telefoneInput = document.getElementById('telefone');
+    const telefoneInput = document.getElementById('form-field-phone');
     if (telefoneInput) {
         telefoneInput.addEventListener('input', function () {
             formatPhone(this);
@@ -1632,9 +1632,9 @@ document.addEventListener('DOMContentLoaded', function () {
             e.preventDefault();
 
             // Coletar dados do formulário
-            const nome = document.getElementById('nome')?.value.trim();
-            const email = document.getElementById('email')?.value.trim();
-            const telefone = document.getElementById('telefone')?.value.trim();
+            const nome = document.getElementById('form-field-nome')?.value.trim();
+            const email = document.getElementById('form-field-email')?.value.trim();
+            const telefone = document.getElementById('form-field-phone')?.value.trim();
 
             // Esconder mensagens anteriores
             hideFormMessages();
@@ -1966,6 +1966,40 @@ function initUrgencyCounter() {
         const notification = gerarNotificacaoPersonalizada();
         mostrarNotificacaoFlutuante(notification);
     }, 10000 + Math.random() * 5000); // Entre 10 e 15 segundos
+}
+
+// ============================================
+// FUNÇÕES DE CAPTURA DE CAMPOS DO FORMULÁRIO
+// ============================================
+
+// Função para capturar o nome do formulário
+function getFormName() {
+    var form = document.querySelector('form.elementor-form');
+    return form ? form.getAttribute('name') : undefined;
+}
+
+// Função para capturar o valor do campo nome
+function getNomeValue() {
+    var name = document.getElementById('form-field-nome').value;
+    return name;
+}
+
+// Função para capturar o valor do campo email
+function getEmailValue() {
+    var email = document.getElementById('form-field-email').value;
+    return email;
+}
+
+// Função para formatar número de telefone (adiciona código do país 55)
+function formatarNumero() {
+    var tel = document.getElementById('form-field-phone').value;
+    
+    // Remover caracteres não numéricos
+    var numeroFormatado = tel.replace(/\D/g, '');
+    
+    // Adicionar código do país (55 para Brasil)
+    numeroFormatado = '55' + numeroFormatado;
+    return numeroFormatado;
 }
 
 

@@ -604,7 +604,7 @@
                         </div>
                         <h2>Complete sua inscrição</h2>
                         <p class="modal-subtitle">Preencha seus dados abaixo para garantir sua vaga</p>
-                        <form id="inscricaoForm" class="modal-form">
+                        <form id="inscricaoForm" name="inscricaoForm" class="modal-form elementor-form">
                 <!-- Mensagem de erro -->
                 <div id="formError" class="form-error" style="display: none;">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -625,16 +625,16 @@
                 </div>
                 
                 <div class="form-group">
-                    <label for="nome">Nome completo *</label>
-                    <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
+                    <label for="form-field-nome">Nome completo *</label>
+                    <input type="text" id="form-field-nome" name="nome" required placeholder="Digite seu nome completo">
                 </div>
                 <div class="form-group">
-                    <label for="email">E-mail *</label>
-                    <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                    <label for="form-field-email">E-mail *</label>
+                    <input type="email" id="form-field-email" name="email" required placeholder="seu@email.com">
                 </div>
                 <div class="form-group">
-                    <label for="telefone">Telefone *</label>
-                    <input type="tel" id="telefone" name="telefone" required placeholder="(00) 00000-0000">
+                    <label for="form-field-phone">Telefone *</label>
+                    <input type="tel" id="form-field-phone" name="telefone" required placeholder="(00) 00000-0000">
                 </div>
                 
                 <!-- Campos ocultos para UTMs -->
