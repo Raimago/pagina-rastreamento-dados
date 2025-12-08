@@ -1743,8 +1743,11 @@ document.addEventListener('DOMContentLoaded', function () {
                     // Obter o link de redirecionamento (pode ser configurado por página)
                     const baseHotmartUrl = window.HOTMART_REDIRECT_URL || 'https://pay.hotmart.com/V99597636U';
                     
+                    // Verificar se a URL base já tem parâmetros (contém ?)
+                    const separator = baseHotmartUrl.includes('?') ? '&' : '?';
+                    
                     // Construir URL completa com parâmetros
-                    const hotmartUrl = `${baseHotmartUrl}?name=${nomeValue}&email=${emailValue}&phonenumber=${telefoneValue}&utm_source=${utmSource}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&utm_content=${utmContent}&utm_term=${utmTerm}&sck=${sckEncoded}`;
+                    const hotmartUrl = `${baseHotmartUrl}${separator}name=${nomeValue}&email=${emailValue}&phonenumber=${telefoneValue}&utm_source=${utmSource}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}&utm_content=${utmContent}&utm_term=${utmTerm}&sck=${sckEncoded}`;
                     
                     // Redirecionar para a página de compra da Hotmart após 2 segundos
                     setTimeout(() => {
