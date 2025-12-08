@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -605,6 +605,25 @@
                         <h2>Complete sua inscrição</h2>
                         <p class="modal-subtitle">Preencha seus dados abaixo para garantir sua vaga</p>
                         <form id="inscricaoForm" class="modal-form">
+                <!-- Mensagem de erro -->
+                <div id="formError" class="form-error" style="display: none;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="8" x2="12" y2="12"></line>
+                        <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                    </svg>
+                    <span id="formErrorText"></span>
+                </div>
+                
+                <!-- Mensagem de sucesso -->
+                <div id="formSuccess" class="form-success" style="display: none;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                    <span id="formSuccessText"></span>
+                </div>
+                
                 <div class="form-group">
                     <label for="nome">Nome completo *</label>
                     <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
